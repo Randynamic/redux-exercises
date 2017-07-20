@@ -9,7 +9,7 @@ import './Amuse.scss';
 @connect(({balloons}) => ({
   balloons
 }))
-class Stores extends Component {
+class Amuse extends Component {
   render() {
     const {balloons} = this.props;
 
@@ -23,4 +23,4 @@ class Stores extends Component {
   }
 }
 
-export default Stores;
+export default Amuse;
