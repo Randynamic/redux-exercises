@@ -1,7 +1,7 @@
 # AH Amusement
 
 ## start
-first run an `npm install`
+Run a `npm install && start`
 
 ## assignments
 1. If you click on the `.root` div in the Amuse file the `getBalloons` action should be triggered so it will fetch new balloons
