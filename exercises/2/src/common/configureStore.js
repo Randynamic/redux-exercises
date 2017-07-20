@@ -23,7 +23,7 @@ export default function configureStore(initialState = {test: 'test'}) {
   const store = createStore(reducer, initialState, enhancer);
 
   // Hot reload reducers (requires Webpack or Browserify HMR to be enabled)
-  if (__DEV__ && module.hot) {
+  if (__DEV__ && module.hot && process.env.BROWSER) {
     module.hot.accept('./reducers', () =>
       // eslint-disable-next-line global-require
       store.replaceReducer(require('./reducers').default),
